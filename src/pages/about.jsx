@@ -66,7 +66,7 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 I&apos;m a 19 year old full stack developer from India. I started programming a year ago. Throughout my journey I&apos;ve learned numerous programming languages, starting from HTML, CSS
-                to ReactJS, MongoDB to NextJS &amp; Tailwind CSS. <br />
+                to ReactJS, MongoDB to NextJS &amp; Tailwind CSS. 
                 While I&apos;ve also delved into the Web3 space, exploring decentralization and beyond!
               </p>
               <p>

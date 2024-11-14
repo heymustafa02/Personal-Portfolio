@@ -15,7 +15,7 @@ const projects = [
     description:
       "Drapier is a personal online canvas for drawing, writing, and organizing ideas. Integrated with Excalidraw's developer tools, it offers a private space for creative note-taking and project planning.",
     link: {
-      href: 'https://github.com/halcyonCore/youphoria',
+      href: 'https://github.com/heymustafa02',
       label: 'GitHub',
     },
     logo: drapier,
