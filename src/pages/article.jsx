@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
-
+import iconimg from '@/images/icon-image.jpg'
 function ArticleSection({ children, ...props }) {
   return (
     <Section {...props}>
@@ -34,6 +34,7 @@ export default function speaking() {
           name="Mustafa Mallebhari"
           
         />
+        <link rel="icon" href={iconimg.src} type="image/jpg" />
       </Head>
       <SimpleLayout
         title="I love to share the joy of STEM+C"

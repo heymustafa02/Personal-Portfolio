@@ -8,7 +8,7 @@ import drapier from '@/images/logos/drapier.svg'
 import orb from '@/images/logos/orb.gif'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoHeart from '@/images/logos/gwc.png'
-
+import iconimg from '@/images/icon-image.jpg'
 const projects = [
   {
     name: 'Drapier : The Workspace that fuels Creativity',
@@ -75,6 +75,7 @@ export default function Projects() {
         <meta
           name="description"
         />
+        <link rel="icon" href={iconimg.src} type="image/jpg" />
       </Head>
       <SimpleLayout
         title="A couple of my  personal projects."

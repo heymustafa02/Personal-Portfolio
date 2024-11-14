@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
 import clsx from 'clsx'
-
+import iconimg from '@/images/icon-image.jpg'
 import { Container } from '@/components/Container'
 import {
   XIcon,
@@ -45,7 +45,11 @@ export default function About() {
         <meta
           name="description"
           content="&quot;I&apos;m Mustafa Mallebhari. A full stack developer &amp; a web3 enthusiast.&quot;"
+          
         />
+        <meta property="og:url" content="https://mustafa-mallebhari.vercel.app"/>
+        <link rel="icon" href={iconimg.src} type="image/jpg" />
+
       </Head>
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">

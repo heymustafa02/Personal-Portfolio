@@ -16,6 +16,7 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
+import iconimg from '@/images/icon-image.jpg'
 import push from '@/images/logos/push.png'
 
 import { generateRssFeed } from '@/lib/generateRssFeed'
@@ -201,10 +202,12 @@ export default function Home() {
     <>
       <Head>
         <title>Mustafa Mallebhari</title>
+        
         <meta
           name="description"
           content="I'm Mustafa Mallebhari. A full stack developer & a web3 enthusiast."
         />
+            <link rel="icon" href={iconimg.src} type="image/jpg" />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
