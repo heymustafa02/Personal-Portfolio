@@ -65,19 +65,17 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               
+             
               <p>
-               I'm 19 year old full stack developer from India. I started programming a year ago and have 
+              I'm a 19 year old full stack developer from India. I started programming a year ago. Throughout my journey I've learned numerous programming languages, starting from HTML, CSS
+               to ReactJS, MongoDB to NextJS & Tailwind CSS. <br />
+               While I’ve also delved into the Web3 space, exploring decentralization and beyond!
               </p>
               <p>
-                This past summer, I was a frontend engineer intern at a startup
-                called F*** You Pay Me, creating an app to help influencers (a
-                female-majority community) gain pay equality and fair treatment
-                when making deals with brands.
-              </p>
-              <p>
-                In my free time, you can find me rock climbing, working out,
-                dancing, or at home spending quality time with my two
-                cockatiels.
+              I'm not here to just code; I’m here to create experiences people genuinely enjoy. My goal? To bring fresh,
+               exciting ideas to life in ways that make people think, ‘Wow, that’s cool.’ So, whether it's a sleek app interface,
+               a next-level backend, or a bold new Web3 experiment, 
+              I’m always chasing that next innovative project!"
               </p>
             </div>
           </div>
