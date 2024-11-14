@@ -67,15 +67,15 @@ export default function About() {
               
              
               <p>
-              I'm a 19 year old full stack developer from India. I started programming a year ago. Throughout my journey I've learned numerous programming languages, starting from HTML, CSS
+              I&apos;m a 19 year old full stack developer from India. I started programming a year ago. Throughout my journey I&apos;ve learned numerous programming languages, starting from HTML, CSS
                to ReactJS, MongoDB to NextJS & Tailwind CSS. <br />
-               While I’ve also delved into the Web3 space, exploring decentralization and beyond!
+               While I&apos;ve also delved into the Web3 space, exploring decentralization and beyond!
               </p>
               <p>
-              I'm not here to just code; I’m here to create experiences people genuinely enjoy. My goal? To bring fresh,
-               exciting ideas to life in ways that make people think, ‘Wow, that’s cool.’ So, whether it's a sleek app interface,
+              I&apos;m not here to just code; I&apos;m here to create experiences people genuinely enjoy. My goal? To bring fresh,
+               exciting ideas to life in ways that make people think, &apos;Wow, that&apos;s cool.&apos; So, whether it&apos;s a sleek app interface,
                a next-level backend, or a bold new Web3 experiment, 
-              I’m always chasing that next innovative project!"
+              I&apos;m always chasing that next innovative project!"
               </p>
             </div>
           </div>
