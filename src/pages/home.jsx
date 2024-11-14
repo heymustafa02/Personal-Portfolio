@@ -19,8 +19,8 @@ import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import push from '@/images/logos/push.png'
 
-import { generateRssFeed } from '@/lib/generateRssFeed'
-import { getAllspeakings } from '@/lib/getAllspeakings'
+// import { generateRssFeed } from '@/lib/generateRssFeed'
+// import { getAllspeakings } from '@/lib/getAllspeakings'
 import { formatDate } from '@/lib/formatDate'
 
 function MailIcon(props) {
@@ -230,7 +230,7 @@ export default function Home({ speakings }) {
   return (
     <>
       <Head>
-        <title>Mustafa Mallebhari - Leader, artist, and frontend enthusiast</title>
+        <title>Mustafa Mallebhari - Full stack developer</title>
         <meta
           name="description"
           content="I'm Mustafa Mallebhari. A full stack developer & a web3 enthusiast."
@@ -239,10 +239,10 @@ export default function Home({ speakings }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          Hey, I'm Mustafa,<br></br> a dev based in India.
+          Hey, I&apos;m Mustafa,<br></br> a dev based in India.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm a full stack developer and web3 enthusiast. I'm passionate about building useful stuff on the internet.
+            I&apos;m a full stack developer and web3 enthusiast. I&apos;m passionate about building useful stuff on the internet.
           </p>
           <div className="mt-6 flex gap-6">
           <SocialLink
@@ -271,13 +271,13 @@ export default function Home({ speakings }) {
         </div>
       </Container>
       <Photos />
-      <Container className="mt-24 md:mt-28">
+      < Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-           <div className="flex flex-col gap-16">
+           {/* <div className="flex flex-col gap-16">
             {speakings.map((speaking) => (
               <speaking key={speaking.slug} speaking={speaking} />
             ))}
-          </div> 
+          </div>  */}
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             {/* <Newsletter /> */}
             <Resume />
@@ -288,16 +288,16 @@ export default function Home({ speakings }) {
   )
 }
 
-export async function getStaticProps() {
-  if (process.env.NODE_ENV === 'production') {
-    await generateRssFeed()
-  }
+// export async function getStaticProps() {
+//   if (process.env.NODE_ENV === 'production') {
+//     await generateRssFeed()
+//   }
 
-  return {
-    props: {
-      speakings: (await getAllspeakings())
-        .slice(0, 4)
-        .map(({ component, ...meta }) => meta),
-    },
-  }
-}
+//   return {
+//     props: {
+//       speakings: (await getStaticProps())
+//         .slice(0, 4)
+//         .map(({ component, ...meta }) => meta),
+//     },
+//   }
+// }

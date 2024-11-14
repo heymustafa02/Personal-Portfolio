@@ -31,8 +31,8 @@ export default function speaking() {
       <Head>
         <title>My blogs</title>
         <meta
-          name="description"
-          content="If you are looking for your next guest speaking, I'm your girl!"
+          name="Mustafa Mallebhari"
+          
         />
       </Head>
       <SimpleLayout

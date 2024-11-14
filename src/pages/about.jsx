@@ -41,7 +41,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Hey! I'm Mustafa</title>
+        <title>Hey! I&apos;m Mustafa</title>
         <meta
           name="description"
           content="I'm Mustafa Mallebhari. A full stack developer & a web3 enthusiast."
@@ -75,19 +75,13 @@ export default function About() {
               I&apos;m not here to just code; I&apos;m here to create experiences people genuinely enjoy. My goal? To bring fresh,
                exciting ideas to life in ways that make people think, &apos;Wow, that&apos;s cool.&apos; So, whether it&apos;s a sleek app interface,
                a next-level backend, or a bold new Web3 experiment, 
-              I&apos;m always chasing that next innovative project!"
+              I&apos;m always chasing that next innovative project!
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              {/* <SocialLink href="#" icon={TwitterIcon}>
-                Follow on Twitter
-              </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-                Follow on Instagram
-              </SocialLink> */}
-              
+             
               <SocialLink
                 href="https://x.com/mallebhari_"
                 icon={XIcon}
@@ -117,7 +111,7 @@ export default function About() {
                 Follow on GitHub
               </SocialLink>
               <SocialLink
-                href="heymustafa.work@gmail.com"
+                 href="mailto:heymustafa.work@gmail.com"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
