@@ -179,125 +179,57 @@ function Resume() {
                   role.end.label ?? role.end
                 }`}
               >
-                <time dateTime={role.start.dateTime ?? role.start}>
+                <time dateTime={role.start.dateTime}>
                   {role.start.label ?? role.start}
-                </time>{' '}
-                <span aria-hidden="true">—</span>{' '}
-                <time dateTime={role.end.dateTime ?? role.end}>
-                  {role.end.label ?? role.end}
                 </time>
+                {' — '}
+                <time dateTime={role.end.dateTime}>{role.end.label ?? role.end}</time>
               </dd>
             </dl>
           </li>
         ))}
       </ol>
-       <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button> 
     </div>
   )
 }
 
-function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
-
-  return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
-          <div
-            key={image.src}
-            className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
-              rotations[imageIndex % rotations.length]
-            )}
-          >
-            <Image
-              src={image}
-              alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
-
-export default function Home({ speakings }) {
+export default function Home() {
   return (
     <>
       <Head>
-        <title>Mustafa Mallebhari - Full stack developer</title>
+        <title>Mustafa Mallebhari&apos;s portfolio</title>
         <meta
           name="description"
-          content="I'm Mustafa Mallebhari. A full stack developer & a web3 enthusiast."
+          content="Mustafa Mallebhari is a full-stack developer who builds innovative projects."
         />
       </Head>
-      <Container className="mt-9">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          Hey, I&apos;m Mustafa,<br></br> a dev based in India.
-          </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&apos;m a full stack developer and web3 enthusiast. I&apos;m passionate about building useful stuff on the internet.
-          </p>
-          <div className="mt-6 flex gap-6">
-          <SocialLink
-              href="https://x.com/mallebhari_"
-              aria-label="Follow on Twitter"
-              icon={XIcon}
-            />
-            <SocialLink
-              href="https://linkedin.com/in/mustafamallebhari/"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-            />
-
-            <SocialLink
-              href="https://www.instagram.com/mustafa.mallebhari/"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            /> 
-             
-            <SocialLink
-              href="https://github.com/heymustafa02"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
+      <Container className="py-16 sm:py-24 lg:py-32">
+        <div className="grid items-center gap-12 sm:grid-cols-2 lg:grid-cols-2">
+          <div>
+            <h1 className="text-4xl font-extrabold text-zinc-900 dark:text-zinc-100 sm:text-5xl lg:text-6xl">
+              I&apos;m Mustafa Mallebhari, a full-stack developer.
+            </h1>
+            <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
+              I&apos;m passionate about building things that people love, and I focus on creating impactful projects with the latest web technologies.
+            </p>
+            <div className="mt-8 flex gap-6">
+              <SocialLink href="https://instagram.com/username" icon={InstagramIcon} />
+              <SocialLink href="https://github.com/username" icon={GitHubIcon} />
+              <SocialLink href="https://linkedin.com/in/username" icon={LinkedInIcon} />
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <Image src={image1} alt="" className="rounded-xl" />
+            <Image src={image2} alt="" className="rounded-xl" />
+            <Image src={image3} alt="" className="rounded-xl" />
+            <Image src={image4} alt="" className="rounded-xl" />
           </div>
         </div>
-      </Container>
-      <Photos />
-      < Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-           {/* <div className="flex flex-col gap-16">
-            {speakings.map((speaking) => (
-              <speaking key={speaking.slug} speaking={speaking} />
-            ))}
-          </div>  */}
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            {/* <Newsletter /> */}
-            <Resume />
-          </div>
+        <div className="mt-16 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+          <Resume />
+          <Newsletter />
         </div>
       </Container>
     </>
   )
 }
-
-// export async function getStaticProps() {
-//   if (process.env.NODE_ENV === 'production') {
-//     await generateRssFeed()
-//   }
-
-//   return {
-//     props: {
-//       speakings: (await getStaticProps())
-//         .slice(0, 4)
-//         .map(({ component, ...meta }) => meta),
-//     },
-//   }
-// }

@@ -44,7 +44,7 @@ export default function About() {
         <title>Hey! I&apos;m Mustafa</title>
         <meta
           name="description"
-          content="I'm Mustafa Mallebhari. A full stack developer & a web3 enthusiast."
+          content="&quot;I&apos;m Mustafa Mallebhari. A full stack developer &amp; a web3 enthusiast.&quot;"
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -53,7 +53,7 @@ export default function About() {
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <Image
                 src={portraitImage}
-                alt=""
+                alt="Portrait of Mustafa"
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
@@ -61,27 +61,24 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I&apos;m Mustafa Mallebhari.<br></br> A full stack developer based in India.
+              I&apos;m Mustafa Mallebhari.<br /> A full stack developer based in India.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              
-             
               <p>
-              I&apos;m a 19 year old full stack developer from India. I started programming a year ago. Throughout my journey I&apos;ve learned numerous programming languages, starting from HTML, CSS
-               to ReactJS, MongoDB to NextJS & Tailwind CSS. <br />
-               While I&apos;ve also delved into the Web3 space, exploring decentralization and beyond!
+                I&apos;m a 19 year old full stack developer from India. I started programming a year ago. Throughout my journey I&apos;ve learned numerous programming languages, starting from HTML, CSS
+                to ReactJS, MongoDB to NextJS &amp; Tailwind CSS. <br />
+                While I&apos;ve also delved into the Web3 space, exploring decentralization and beyond!
               </p>
               <p>
-              I&apos;m not here to just code; I&apos;m here to create experiences people genuinely enjoy. My goal? To bring fresh,
-               exciting ideas to life in ways that make people think, &apos;Wow, that&apos;s cool.&apos; So, whether it&apos;s a sleek app interface,
-               a next-level backend, or a bold new Web3 experiment, 
-              I&apos;m always chasing that next innovative project!
+                I&apos;m not here to just code; I&apos;m here to create experiences people genuinely enjoy. My goal? To bring fresh,
+                exciting ideas to life in ways that make people think, &quot;Wow, that&apos;s cool.&quot; So, whether it&apos;s a sleek app interface,
+                a next-level backend, or a bold new Web3 experiment, 
+                I&apos;m always chasing that next innovative project!
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-             
               <SocialLink
                 href="https://x.com/mallebhari_"
                 icon={XIcon}
@@ -111,13 +108,12 @@ export default function About() {
                 Follow on GitHub
               </SocialLink>
               <SocialLink
-                 href="mailto:heymustafa.work@gmail.com"
+                href="mailto:heymustafa.work@gmail.com"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
                 heymustafa.work@gmail.com
               </SocialLink>
-              
             </ul>
           </div>
         </div>
