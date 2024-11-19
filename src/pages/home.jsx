@@ -20,7 +20,7 @@ import iconimg from '@/images/icon-image.jpg'
 import push from '@/images/logos/push.png'
 
 import { generateRssFeed } from '@/lib/generateRssFeed'
-// import { getAllspeakings } from '@/lib/getAllspeakings'
+
 import { formatDate } from '@/lib/formatDate'
 
 function MailIcon(props) {
