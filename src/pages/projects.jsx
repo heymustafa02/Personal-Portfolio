@@ -6,6 +6,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import logoAnimaginary from '@/images/logos/animaginary.svg'
 import drapier from '@/images/logos/drapier.svg'
 import orb from '@/images/logos/orb.gif'
+import walletedge from '@/images/logos/wallet-edge.png'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoHeart from '@/images/logos/gwc.png'
 import iconimg from '@/images/icon-image.jpg'
@@ -20,16 +21,16 @@ const projects = [
     },
     logo: drapier,
   },
-  // {
-  //   name: 'Tailwind Animation Exploration',
-  //   description:
-  //     'Leveraging Tailwind CSS, this captivating one-page project showcases mesmerizing animations and innovative blend modes for striking color and movement',
-  //   link: {
-  //     href: 'https://tailwind-animation-exploration.vercel.app/',
-  //     label: 'tailwind-animation-exploration.vercel.app/',
-  //   },
-  //   logo: orb,
-  // },
+  {
+    name: 'Wallet Edge : Your Finance friend',
+    description:
+      'Built a expense tracker that manages income, budget and expenses with ease. Built using NextJS, Tailwind CSS & Typescipt.',
+    link: {
+      href: 'https://wallet-edge-xi.vercel.app/',
+      label: 'Wallet Edge',
+    },
+    logo: walletedge,
+  }
   // {
   //   name: 'Girls Who Code TXST',
   //   description:
