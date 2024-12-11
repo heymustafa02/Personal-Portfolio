@@ -16,8 +16,8 @@ const projects = [
     description:
       "Drapier is a personal online canvas for drawing, writing, and organizing ideas. Integrated with Excalidraw's developer tools, it offers a private space for creative note-taking and project planning.",
     link: {
-      href: 'https://github.com/heymustafa02',
-      label: 'GitHub',
+      href: 'https://drapier.vercel.app/',
+      label: 'Live',
     },
     logo: drapier,
   },
@@ -26,9 +26,10 @@ const projects = [
     description:
       'Built a expense tracker that manages income, budget and expenses with ease. Built using NextJS, Tailwind CSS & Typescipt.',
     link: {
-      href: 'https://wallet-edge-xi.vercel.app/',
-      label: 'Wallet Edge',
+      href: 'https://walletedge.vercel.app/',
+      label: 'Live',
     },
+    
     logo: walletedge,
   }
   // {
