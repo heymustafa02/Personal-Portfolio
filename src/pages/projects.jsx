@@ -3,12 +3,8 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
 import drapier from '@/images/logos/drapier.svg'
-import orb from '@/images/logos/orb.gif'
 import walletedge from '@/images/logos/wallet-edge.png'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoHeart from '@/images/logos/gwc.png'
 import iconimg from '@/images/icon-image.jpg'
 const projects = [
   {
@@ -29,7 +25,7 @@ const projects = [
       href: 'https://walletedge.vercel.app/',
       label: 'Live',
     },
-    
+    github: 'https://github.com',
     logo: walletedge,
   }
   // {
@@ -81,7 +77,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="A couple of my  personal projects."
-        intro="Built some cool stuff with you would love to see. Go check it out!"
+        intro="Built some cool stuff that you would love to see! Go check it out!"
       >
         <ul
           role="list"
