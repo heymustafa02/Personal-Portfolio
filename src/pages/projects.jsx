@@ -116,30 +116,69 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import drapier from '@/images/logos/drapier.svg'
 import walletedge from '@/images/logos/wallet-edge.png'
 import iconimg from '@/images/icon-image.jpg'
+import apple from '@/images/logos/apple.png'
+import mash from '@/images/logos/mash.png'
 
 const projects = [
   {
     name: 'Drapier : The Workspace that fuels Creativity',
     description:
-      "Drapier is a personal online canvas for drawing, writing, and organizing ideas. Integrated with Excalidraw's developer tools, it offers a private space for creative note-taking and project planning.",
+     "Drapier is a personal online canvas for drawing, writing, and organizing ideas. Integrated with Excalidraw's developer tools, it offers a private space for creative note-taking and project planning.",
     link: {
-      href: 'https://drapier.vercel.app/',
+      href: 'https://drapier.vercel.app',
       label: 'Live',
     },
-    github: 'https://github.com/', // Add GitHub link
     logo: drapier,
   },
   {
-    name: 'Wallet Edge : Your Finance friend',
+         name: 'Wallet Edge : Your Finance friend',
+         description:
+           'Built a expense tracker that manages income, budget and expenses with ease. Built using NextJS, Tailwind CSS & Typescipt.',
+         link: {
+           href: 'https://walletedge.vercel.app/',
+           label: 'Live',
+         },
+        logo: walletedge,
+      },
+  {
+    name: 'Mash AI',
     description:
-      'Built a expense tracker that manages income, budget and expenses with ease. Built using NextJS, Tailwind CSS & Typescipt.',
+      "I've created a beautiful AI SaaS landing page naming it as Mash AI. ",
+    link: { href: 'http://mashai.vercel.app', label: 'Live' },
+    logo: mash,
+  },
+  {
+    name: 'iPhone Landing Page Clone',
+    description:
+     "An immersive iPhone 15 Pro landing page built with GSAP and Three.js for stunning 3D animations and smooth interactions.",
     link: {
-      href: 'https://walletedge.vercel.app/',
+      href: 'https://apple-landing-site.vercel.app/',
       label: 'Live',
     },
-    github: 'https://github.com/', // Add GitHub link
-    logo: walletedge,
-  }
+    logo: apple,
+  },
+  {
+    name: 'Web Design Agency ',
+    description:
+    "A sleek and modern landing page for a web design and development agency, showcasing services with smooth animations and clean UI.",
+    link: {
+      href: 'https://agency101.vercel.app/',
+      label: 'Live',
+    },
+    logo: mash,
+  },
+  // {
+  //   name: 'Web Design Agency ',
+  //   description:
+  //   "Another modern landing page for a web design and development agency, in a dark theme.",
+  //   link: {
+  //     href: 'https://mash-agency.vercel.app/',
+  //     label: 'Live',
+  //   },
+  //   logo: drapier,
+  // }
+
+
 ]
 
 function LinkIcon(props) {
@@ -162,7 +201,7 @@ export default function Projects() {
         <link rel="icon" href={iconimg.src} type="image/jpg" />
       </Head>
       <SimpleLayout
-        title="A couple of my personal projects."
+        title="A few of my personal projects."
         intro="Built some cool stuff that you would love to see! Go check it out!"
       >
         <ul
@@ -170,7 +209,7 @@ export default function Projects() {
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
           {projects.map((project) => (
-            <Card as="li" key={project.name} className="relative pb-12">
+            <Card as="li" key={project.name}>
               <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <Image
                   src={project.logo}
@@ -180,29 +219,14 @@ export default function Projects() {
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                <Card.Link href={project.link.href} target="_blank" 
+                  rel="noopener noreferrer" >{project.name}</Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
-              <div className="absolute bottom-0 left-0 right-0 flex justify-between p-4">
-              <a 
-                   href={project.link.href} 
-                className="flex items-center text-sm font-medium text-zinc-400 transition hover:text-teal-500 dark:hover:text-teal-400"
-                   >
-  <LinkIcon className="h-6 w-6 flex-none" />
-  <span className="ml-2">{project.link.label}</span>
-</a>
-
-{project.github && (
-  <a 
-    href={project.github} 
-    className="flex items-center text-sm font-medium text-zinc-400 transition hover:text-teal-500 dark:hover:text-teal-400"
-  >
-    <LinkIcon className="h-6 w-6 flex-none" />
-    <span className="ml-2">GitHub</span>
-  </a>
-)}
-
-              </div>
+              <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+                <LinkIcon className="h-6 w-6 flex-none" />
+                <span className="ml-2">{project.link.label}</span>
+              </p>
             </Card>
           ))}
         </ul>
