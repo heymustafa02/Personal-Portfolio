@@ -85,6 +85,7 @@ export default function About() {
             <ul role="list">
               <SocialLink
                 href="https://x.com/mallebhari_"
+                target="_blank"
                 icon={XIcon}
                 className="mt-4"
               >
@@ -92,6 +93,7 @@ export default function About() {
               </SocialLink>
               <SocialLink
                 href="https://instagram.com/mustafa.mallebhari"
+                target="_blank"
                 icon={InstagramIcon}
                 className="mt-4"
               >
@@ -99,6 +101,7 @@ export default function About() {
               </SocialLink>
               <SocialLink
                 href="https://linkedin.com/in/mustafamallebhari/"
+                target="_blank"
                 icon={LinkedInIcon}
                 className="mt-4"
               >
@@ -106,6 +109,7 @@ export default function About() {
               </SocialLink>
               <SocialLink
                 href="https://github.com/heymustafa02"
+                target="_blank"
                 icon={GitHubIcon}
                 className="mt-4"
               >

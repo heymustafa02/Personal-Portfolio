@@ -162,10 +162,17 @@ function Resume() {
           </li>
         ))}
       </ol>
-      {/* <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button> */}
+      <a
+  href="https://drive.google.com/file/d/1O_sxxlL9hKIVJbMkiF-0HSurvJPqKjq2/view?usp=sharing"
+  target="_blank"
+  className="group mt-6 w-full"
+>
+  <Button variant="secondary" className="w-full">
+    View CV
+    <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+  </Button>
+</a>
+
     </div>
   )
 }
@@ -220,23 +227,27 @@ export default function Home() {
           <div className="mt-6 flex gap-6">
           <SocialLink
               href="https://x.com/mallebhari_"
+              target="_blank"
               aria-label="Follow on Twitter"
               icon={XIcon}
             />
             <SocialLink
               href="https://linkedin.com/in/mustafamallebhari/"
+              target="_blank"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
 
             <SocialLink
               href="https://www.instagram.com/mustafa.mallebhari/"
+              target="_blank"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             /> 
              
             <SocialLink
               href="https://github.com/heymustafa02"
+              target="_blank"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
