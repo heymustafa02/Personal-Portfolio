@@ -165,6 +165,7 @@ function Resume() {
       <a
   href="https://drive.google.com/file/d/1O_sxxlL9hKIVJbMkiF-0HSurvJPqKjq2/view?usp=sharing"
   target="_blank"
+  rel="noopener noreferrer"
   className="group mt-6 w-full"
 >
   <Button variant="secondary" className="w-full">

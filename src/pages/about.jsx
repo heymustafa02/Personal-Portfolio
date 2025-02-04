@@ -94,6 +94,7 @@ export default function About() {
               <SocialLink
                 href="https://instagram.com/mustafa.mallebhari"
                 target="_blank"
+                
                 icon={InstagramIcon}
                 className="mt-4"
               >
